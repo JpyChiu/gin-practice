@@ -17,11 +17,11 @@ func main() {
 		})
 	})
 
-	r.POST("/users", controllers.CreateUser)
-	r.GET("/users", controllers.FindUsers)
-	r.GET("/users/:id", controllers.FindUser)
-	r.PUT("/users/:id", controllers.UpdateUser)
-	r.DELETE("/users/:id", controllers.DeleteUser)
+	r.POST("/api/users", controllers.CreateUser)
+	r.GET("/api/users", controllers.FindUsers)
+	r.GET("/api/users/:id", controllers.FindUser)
+	r.PUT("/api/users/:id", controllers.UpdateUser)
+	r.DELETE("/api/users/:id", controllers.DeleteUser)
 
 	// r.POST("/users/:name", func(c *gin.Context) {
 	// 	name := c.Param("name")
